@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="resume">
+    <!-- Header Section -->
+    <header class="header">
+      <p class="subtitle" contenteditable="true">SOFTWARE DEVELOPER</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Left Column -->
+      <div class="left-column">
+        <!-- Profile Image Section -->
+        <div class="profile-image">
+          <img id="profile-pic" src="profile-placeholder.jpg" alt="Profile" />
+          <input type="file" id="image-upload" accept="image/*" />
+        </div>
+
+        <!-- Personal Information Section -->
+        <section class="personal-information">
+          <h2>PERSONAL INFORMATION</h2>
+          <ul>
+            <li contenteditable="true">Enter your name:</li>
+            <li contenteditable="true">Contact number:</li>
+            <li contenteditable="true">Email:</li>
+            <li contenteditable="true">LinkedIn profile:</li>
+          </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+          <h2>SKILLS</h2>
+          <button id="add-skill">Add Skill</button>
+          <ul id="skills-list"></ul>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications">
+          <h2>CERTIFICATIONS</h2>
+          <button id="add-certification">Add Certification</button>
+          <div id="certifications-list"></div>
+        </section>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <!-- Education Section -->
+        <section class="education">
+          <h2>EDUCATION</h2>
+          <button id="add-education">Add Education</button>
+          <div id="education-list"></div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="work-experience">
+          <h2>WORK EXPERIENCE</h2>
+          <button id="add-experience">Add Experience</button>
+          <div id="experience-list"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+          <h2>PROJECTS</h2>
+          <button id="add-project">Add Project</button>
+          <div id="projects-list"></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Generate & Print Button below the content -->
+    <div class="button-container">
+      <button id="generate-print">Generate & Print</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
